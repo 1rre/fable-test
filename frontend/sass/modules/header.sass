@@ -1,0 +1,128 @@
+.hero
+  padding-right: 0
+  padding-left: 0
+  background-color: red
+
+.hero__blog
+  padding: 0 15px
+  margin-top: 20px
+  margin-bottom: 20px
+  text-align: center
+
+.hero__blog__logo
+  margin-bottom: 15px
+
+.hero .stripe
+  background-color: #225590
+  height: 200px
+
+.hero a, .dropdown__label
+  color: #fff
+
+.stripe
+  padding: 0 15px
+
+.navigation
+  list-style: none
+  font-size: 20px
+  margin-bottom: 0
+  margin-left: 0
+  padding-left: 0
+  margin: 0 auto
+  float: none
+  margin-top: 15px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.navigation__link
+  margin: 0 5px
+  padding: 6px 11px
+  border-radius: 5px
+
+.navigation__link:hover
+  background-color: rgba(255, 255, 255, 0.1)
+
+.navigation__link.active
+  background-color: rgba(255, 255, 255, 0.2)
+
+.dropdown
+  margin: 0 5px
+  padding: 6px 11px
+  border-radius: 5px
+
+.dropdown:hover
+  background-color: #3F699A
+  border-radius: 5px 5px 0 0
+
+.dropdown__label
+  cursor: pointer
+
+.dropdown__submenu
+  background-color: #3F699A
+  position: absolute
+  display: none
+  box-shadow: 15px 15px 25px -10px rgb(0,0,0)
+  z-index: 1000
+  margin: 6px 0 0 -11px
+  border-radius: 0 5px 5px 5px
+  list-style: none
+  flex-wrap: wrap
+  justify-content: center
+  padding-left: 0
+  font-size: 18px
+
+.dropdown__submenu li 
+  text-decoration: none
+  display: block
+  text-align: left
+  margin: 5px 5px
+  padding: 6px 11px
+  border-radius: 5px
+
+.dropdown:hover .dropdown__submenu
+  display: block
+
+.hero__blog__logo
+  float: none
+  margin-bottom: 0
+
+@media (min-width: 801px)
+  .hero .stripe
+    height: 200px
+
+  .stripe, .hero__blog 
+    padding-left: 0
+    padding-right: 0
+  
+  .hero__blog 
+    margin-top: 50px
+
+  .hero__blog__button 
+    float: right
+  
+  .hero__blog__logo 
+    float: left
+    margin-bottom: 0
+  
+  .hero 
+    display: block
+  
+  .navigation 
+    float: right
+    margin-top: 50px
+    justify-content: flex-end
+  
+  .stripe__button 
+    width: auto
+    margin-top: 49px
+    float: right
+  
+  .stripe__text 
+    float: left
+  
+
+
+@media (min-width: 600px)
+  .navigation
+    width: 600px
